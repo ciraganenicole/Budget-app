@@ -1,0 +1,37 @@
+<section class="category h-screen">
+<header class="header bg-sky-600 text-white font-bold">
+     <div>
+      <p class="text-2xl">💰</p>
+    </div>
+    <h2 class= "justify-self-center">CATEGORIES</h2>
+    <div>
+    <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "sign_out text_white" %>
+    </div>
+</header>
+
+<ul class="ul mx-auto overflow-y-auto overflow-x-hidden list">
+    <% if @categories.length == 0 %>
+        <p class="text-center">No categories yet</p>
+    <% else %>
+    <% @categories.each do |category| %>
+     <%= link_to category_transancts_path(category), class: '' do %>
+        <li class="list bg margin-bottom">
+                <img src="<%= category.icon %>" class="image"/>
+                <div class="text-secondary ml-2 p-2">
+                    <p class="name"><%= category.name %></p>
+                    <p class="smal-txt"><%= category.created_at.strftime("%d %b %Y") %> </p>
+                </div>
+                <div class="amount">
+                    <%= number_to_currency(category.transancts.sum(:amount))%>
+                </div>
+        </li>
+     <% end %>
+    <% end %>
+    <% end %>
+</ul>
+
+<div class="flex justify-center items-center bg-sky-600 text-white py-5 px-3 font-bold">
+    
+      <%= link_to "ADD NEW CATEGORY", new_category_path(@category,current_user),  class:"add-button cursor-pointer hover:bg-sky-700" %>
+</div>
+</section>

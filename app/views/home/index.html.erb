@@ -1,0 +1,16 @@
+<section class="flex flex-col justify-center gap-y-8 items-center h-screen">
+
+    <h1 class="home-title text-slate-500 mb-4 text-[48px] font-bold text-sky-700">BUDGET APP</h1>
+    <div class="w-[20rem] flex-col flex text-center font-bold">
+    <%= link_to new_user_session_path, class: "" do %>
+          <div class="w-full bg-sky-600 home px-8 py-4 mb-4 rounded-lg cursor-pointer hover:bg-sky-700">
+               <h2>LOGIN</h2>
+          </div>
+     <% end %>
+     <%= link_to new_user_registration_path do %>
+          <div class="w-full bg-sky-600 home px-8 py-4 rounded-lg cursor-pointer hover:bg-sky-700">
+               <h2>SIGNUP</h2>
+          </div>
+     <% end %>
+    </div>
+</section>
