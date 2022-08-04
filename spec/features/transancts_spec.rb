@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'category', type: :feature do
   before(:each) do
-    visit home_index_path
+    visit root_path
     click_link 'LOGIN'
     visit new_user_session_path
     fill_in 'Email', with: 'candy@gmail.com'
@@ -23,7 +23,7 @@ RSpec.describe 'category', type: :feature do
 
   it 'should able to sign out' do
     click_button 'Sign out'
-    visit home_index_path
+    visit root_path
   end
 
   it 'should be able to create a new transanction' do
