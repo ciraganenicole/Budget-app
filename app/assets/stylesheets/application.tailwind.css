@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&family=Lato&display=swap');
+
+body {
+  position: relative;
+  background-color: #e7e9ec;
+}
+
+.home-title {
+  font-family: 'Dancing Script', sans-serif;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+
+.width {
+  width: 400px;
+}
+
+.bg {
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px white;
+}
+
+.button {
+  background-color: rgba(4, 145, 233, 0.863);
+  margin-top: 12px;
+  margin-bottom: 8px;
+  height: 45px;
+  color: white;
+}
+
+.text {
+  color: rgb(0, 157, 255);
+}
+
+.texte {
+  color: rgb(3, 64, 150);
+}
+
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  color: white;
+}
+
+.add-button {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: white;
+  border: 2px solid rgb(3, 64, 150);
+  width: 100%;
+  margin: 15px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  color: white;
+}
+
+.back {
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6rem;
+  width: 90rem;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.list::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.image {
+  height: 6rem;
+}
+
+.name {
+  color: rgb(3, 64, 150);
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 34rem;
+}
+
+.trans {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 15px;
+}
+
+.amount {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.home {
+  color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  .list {
+    width: 30rem;
+  }
+}

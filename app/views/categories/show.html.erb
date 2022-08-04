@@ -1,0 +1,20 @@
+<section class="categories">
+<header class="d-flex justify-content-between align-items-center bg-primary text-white py-2 px-3">
+     <div>
+        <%= link_to root_path, class: "text-white" do %>
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        <% end %>
+    </div>
+    <h2 class= "justify-self-center">TRANSANCTION</h2>
+    <div>
+    <%= link_to destroy_user_session_path, class:'text-white', :method => :delete do %>
+         <i class="fas fa-sign-out-alt "></i>
+    <% end %>
+    </div>
+  </header>
+
+<img src="<%= @category.icon %>" class="h-75 rounded"/>
+<div class="bg-white py-4 px-2">
+   <%= @category.name %>
+</div>
+</section>

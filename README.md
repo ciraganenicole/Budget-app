@@ -11,11 +11,11 @@
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://mighty-springs-28770.herokuapp.com/)
 
 ## Video Link
 
-[VIDEO LINK]()
+[VIDEO LINK](https://www.loom.com/share/230c38feaf27475a817a75569e663a87)
 
 ## Getting Started
 

@@ -1,0 +1,39 @@
+<section class="category h-screen">
+
+  <header class="header bg-sky-600 font-bold">
+    <div class="back">
+      <%= link_to categories_path, class: "text-xl border border-2 p-2 text-xl back" do %>
+          <span class="text-2xl">&#8701;</span>
+      <% end %>
+    </div>
+    <h2 class= "justify-self-center">NEW TRANSANCTION</h2>
+    <div>
+      <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "sign_out text_white" %>
+    </div>
+  </header>
+  
+    <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+        <p class="alert alert-danger"><%= alert %></p>
+    <% end %> 
+ 
+ <%= form_with(model: @transanct, url: {action: "create" }, class:"border-top border-2 mx-auto flex flex-col justify-between gap-y-5 margin-bottom") do |form| %>
+  <div class="field">
+    <%= form.text_field :name, autofocus: true, placeholder: "Name", autocomplete: "", class: "width margin-bottom"%>
+  </div>
+
+  <div class="field">
+    <%= form.text_field :amount, placeholder: "Amount", class: "width margin-bottom" %>
+  </div>
+    
+  <div>
+    <%= form.submit "SAVE", class:"button font-bold width cursor-pointer"  %>
+  </div>
+<% end %>
+<div class="footer bg-sky-600 font-bold">
+    <h2>@ciraganenicole</h2>
+</div>
+
+</section>
