@@ -76,7 +76,7 @@ To deploy to Heroku:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/mwafrika/budget-app/issues).
+Feel free to check the [issues page](https://github.com/ciraganenicole/Budget-app/issues).
 
 ## Show your support
 
